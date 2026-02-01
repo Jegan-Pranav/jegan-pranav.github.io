@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jegan Pranav P - Computer Vision & AI Developer specialized in GPU-accelerated video analytics using NVIDIA DeepStream, TensorRT, and CUDA">
+    <meta name="keywords" content="Computer Vision, AI, Deep Learning, NVIDIA DeepStream, TensorRT, CUDA, GPU Computing">
+    <meta name="author" content="Jegan Pranav P">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jegan Pranav P - Computer Vision & AI Developer">
+    <meta property="og:description" content="Specialized in real-time inference pipelines using NVIDIA DeepStream, TensorRT, and CUDA for multi-camera RTSP processing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jegan-pranav.github.io">
+    
+    <title>Jegan Pranav P - Computer Vision & AI Developer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤖%3C/text%3E%3C/svg%3E">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">JP</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particles-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Jegan Pranav P</h1>
+                <h2 class="hero-tagline">Computer Vision & AI Developer | GPU-Accelerated Video Analytics</h2>
+                <p class="hero-description">
+                    Specialized in real-time inference pipelines using NVIDIA DeepStream, TensorRT, and CUDA 
+                    for multi-camera RTSP processing on Jetson and RTX GPUs.
+                </p>
+                <div class="hero-contact">
+                    <span>📞 +91-7358818105</span>
+                    <span>✉️ pjegan@karunya.edu.in</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="assets/resume.pdf" class="btn btn-primary" download>
+                        Download Resume
+                    </a>
+                    <a href="https://github.com/Jegan-Pranav" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/jegan-pranav-prakash-771a06249" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
+                <button class="filter-btn" data-filter="gpu-accelerated">GPU Accelerated</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+            </div>
+            
+            <!-- Hero Project: CampusSentinel -->
+            <div class="project-card hero-project" data-category="computer-vision gpu-accelerated">
+                <!-- Video Demo -->
+                <div class="project-video">
+                    <video controls preload="metadata" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect fill='%23111827' width='800' height='450'/%3E%3Ctext x='50%25' y='50%25' fill='%2376B900' font-size='24' text-anchor='middle' dy='.3em'%3E▶ CCTV Analytics Demo%3C/text%3E%3C/svg%3E">
+                        <source src="assets/cctv.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-header">
+                    <h3 class="project-title">CampusSentinel – Multi-Camera CCTV Video Analytics Platform</h3>
+                    <span class="project-status">Ongoing</span>
+                </div>
+                <p class="project-description">
+                    Multi-camera CCTV intelligence system for Karunya University enabling real-time crowd and traffic monitoring, 
+                    searchable incidents, and automated alerts using live RTSP feeds.
+                </p>
+                
+                <!-- Performance Badge -->
+                <div class="performance-badge">
+                    <span>⚡ 25-30 FPS</span>
+                    <span>📹 4MP Streams</span>
+                    <span>🎮 RTX 5090</span>
+                </div>
+                
+                <!-- Architecture Diagram -->
+                <div class="architecture-diagram">
+                    <div class="arch-step">
+                        <div class="arch-icon">📹</div>
+                        <div class="arch-label">RTSP Feeds</div>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">📥</div>
+                        <div class="arch-label">Ingestion</div>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">⚡</div>
+                        <div class="arch-label">ZeroMQ</div>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step highlight">
+                        <div class="arch-icon">🎮</div>
+                        <div class="arch-label">GPU Inference</div>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">🎯</div>
+                        <div class="arch-label">Tracking</div>
+                    </div>
+                    <div class="arch-arrow">→</div>
+                    <div class="arch-step">
+                        <div class="arch-icon">📊</div>
+                        <div class="arch-label">Dashboard</div>
+                    </div>
+                </div>
+                
+                <div class="project-achievements">
+                    <h4>Key Achievements:</h4>
+                    <ul>
+                        <li>GPU-accelerated pipeline using Savant (DeepStream 7.1) with decoupled ingestion and inference via ZeroMQ</li>
+                        <li>Tested on 4MP Hikvision CCTV streams at 25–30 FPS on RTX 5090</li>
+                        <li>Integrated PeopleNet, YOLOv11, LPDNet/LPRNet with NvSORT tracking</li>
+                        <li>Dashboard for monitoring and playback</li>
+                    </ul>
+                </div>
+                
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Savant (DeepStream 7.1)</span>
+                    <span class="tech-tag">TensorRT 10.9</span>
+                    <span class="tech-tag">GStreamer</span>
+                    <span class="tech-tag">ZeroMQ</span>
+                    <span class="tech-tag">InfluxDB</span>
+                    <span class="tech-tag">Go2RTC</span>
+                </div>
+                
+                <div class="project-link">
+                    <span class="project-note">🔒 Private/University Project</span>
+                </div>
+            </div>
+
+            <!-- Project 2: Autonomous Drone -->
+            <div class="project-card" data-category="computer-vision gpu-accelerated">
+                <!-- Video Demo -->
+                <div class="project-video">
+                    <video controls preload="metadata" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect fill='%23111827' width='800' height='450'/%3E%3Ctext x='50%25' y='50%25' fill='%2376B900' font-size='24' text-anchor='middle' dy='.3em'%3E▶ Drone Surveillance Demo%3C/text%3E%3C/svg%3E">
+                        <source src="assets/Cyberthon_Project.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-header">
+                    <h3 class="project-title">Autonomous Drone Surveillance System</h3>
+                    <span class="project-badge">🏆 Cyberthon 2025 Finalist</span>
+                </div>
+                <p class="project-description">
+                    Real-time aerial surveillance pipeline for disaster response, border surveillance, and search-and-rescue.
+                </p>
+                
+                <div class="project-achievements">
+                    <h4>Key Achievements:</h4>
+                    <ul>
+                        <li>Trained YOLOv11n and YOLOv11s on VisDrone achieving 27.3 and 31.2 mAP@50–95</li>
+                        <li>Distributed inference: Jetson Nano video → RTX 4050 via ZeroMQ</li>
+                        <li>16–24 FPS at 640x640 with DeepSORT tracking</li>
+                    </ul>
+                </div>
+                
+                <div class="project-tech">
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">DeepSORT</span>
+                    <span class="tech-tag">CUDA</span>
+                    <span class="tech-tag">Jetson Nano</span>
+                    <span class="tech-tag">ZeroMQ</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">Leaflet.js</span>
+                </div>
+                
+                <div class="project-link">
+                    <a href="https://github.com/Jegan-Pranav/Cyberthon-Drone" target="_blank" rel="noopener noreferrer" class="btn-link">
+                        View on GitHub →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3: Autonomous Robot -->
+            <div class="project-card" data-category="robotics">
+                <!-- Video Demo -->
+                <div class="project-video">
+                    <video controls preload="metadata" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect fill='%23111827' width='800' height='450'/%3E%3Ctext x='50%25' y='50%25' fill='%2376B900' font-size='24' text-anchor='middle' dy='.3em'%3E▶ AMR Navigation Demo%3C/text%3E%3C/svg%3E">
+                        <source src="assets/AMR.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-header">
+                    <h3 class="project-title">Autonomous Mobile Robot Navigation</h3>
+                    <span class="project-date">Jun 2025</span>
+                </div>
+                <p class="project-description">
+                    Skid-steer autonomous robot with mapping and navigation stack using ROS 2.
+                </p>
+                
+                <div class="project-achievements">
+                    <h4>Key Achievements:</h4>
+                    <ul>
+                        <li>LiDAR SLAM using SLAM Toolbox for occupancy grid mapping</li>
+                        <li>Autonomous navigation with Nav2 global planner and DWB local controller</li>
+                        <li>Deployed on NVIDIA Jetson AGX Orin</li>
+                    </ul>
+                </div>
+                
+                <div class="project-tech">
+                    <span class="tech-tag">ROS 2 Humble</span>
+                    <span class="tech-tag">Nav2</span>
+                    <span class="tech-tag">SLAM Toolbox</span>
+                    <span class="tech-tag">RP Lidar A1</span>
+                    <span class="tech-tag">Jetson AGX Orin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="30">0</div>
+                    <div class="stat-label">FPS Processing</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Major Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Publication</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">OpenCV</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>NVIDIA Stack</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">DeepStream</span>
+                        <span class="skill-tag">TensorRT</span>
+                        <span class="skill-tag">TAO Toolkit</span>
+                        <span class="skill-tag">CUDA</span>
+                        <span class="skill-tag">Jetson</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GStreamer</span>
+                        <span class="skill-tag">ZeroMQ</span>
+                        <span class="skill-tag">ROS 2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Computer Vision Intern</h3>
+                        <h4>Nextbrain Technologies Pvt Ltd, Bangalore</h4>
+                        <p class="timeline-date">May 2024 – Jun 2024</p>
+                        <ul>
+                            <li>Developed OpenCV-based retail surveillance analytics</li>
+                            <li>Improved robustness under lighting variation</li>
+                            <li>Built reusable Python modules</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>B.Tech. Computer Science and Engineering</h3>
+                    <p class="institution">Karunya Institute of Technology and Sciences</p>
+                    <p class="education-details">2022 – 2026 | CGPA: 7.3/10</p>
+                </div>
+                
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>
+                            <strong>NVIDIA:</strong> Getting started with AI on Jetson Nano
+                        </li>
+                        <li>
+                            <strong>Microsoft Certified:</strong> Azure AI-900
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="publications">
+                    <h3>Publication</h3>
+                    <p class="publication-item">
+                        J. Pranav.P, et al., "Smart Fleet: An Advanced Web-Based Solution for Fleet Management and Security," 
+                        2023 ICCPCT, doi: 10.1109/ICCPCT58313.2023.10245993
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <p class="contact-text">
+                        I'm always interested in discussing new opportunities, collaborations, or projects in Computer Vision and AI.
+                    </p>
+                    <div class="contact-info">
+                        <a href="tel:+917358818105" class="contact-link">📞 +91-7358818105</a>
+                        <a href="mailto:pjegan@karunya.edu.in" class="contact-link">✉️ pjegan@karunya.edu.in</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Jegan-Pranav" target="_blank" rel="noopener noreferrer" class="social-link">
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/jegan-pranav-prakash-771a06249" target="_blank" rel="noopener noreferrer" class="social-link">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Interactive Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key (This is safe to be public) -->
+                        <input type="hidden" name="access_key" value="d80aeaa9-c3a2-4579-a628-d312dd0a7a46">
+                        <input type="hidden" name="subject" value="New Contact from Portfolio">
+                        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                            <label for="name">Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            <label for="email">Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder="Subject">
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Your message here..." rows="5"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">Sending...</span>
+                        </button>
+                        
+                        <div class="form-status" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jegan Pranav P. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Jegan-Pranav" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/jegan-pranav-prakash-771a06249" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
